@@ -1,0 +1,36 @@
+API REST para:
+
+Cadastrar cidade 
+Cadastrar cliente
+Consultar cidade pelo nome
+Consultar cidade pelo estado (Id)
+Consultar cliente pelo nome
+Consultar cliente pelo Id
+Remover cliente
+Alterar o nome do cliente
+
+Considere o cadastro com dados básicos:
+
+Cidades: 
+1) nome 
+2) estado
+
+Cliente:
+1) nome completo
+2) sexo
+3) data de nascimento
+4) idade
+5) cidade onde mora
+
+
+--BÔNUS:
+Cadastrar Estado
+Consultar Estado pelo Id
+Consultar Estado pelo Nome
+Alterar Nome da Cidade
+Alterar Nome do Estado
+Remover Cidade
+Remover Estado
+Consultar Cidade pelo Id
+Consultar Cliente pela cidade (Id)
+Consultar Cliente pelo Estado (Id)

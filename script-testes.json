@@ -1,0 +1,317 @@
+---------------------------------
+POST (Estados) https://localhost:5001/v1/estados
+
+{
+    "NomeEstado":"Bahia",	
+    "UF":"BA"
+}
+
+{
+    "NomeEstado":"Pernambuco",
+    "UF":"PE"
+}
+
+{
+    "NomeEstado":"Ceará",
+    "UF":"CE"
+}
+
+--GET (All) 	https://localhost:5001/v1/estados
+
+--GET (One) 	https://localhost:5001/v1/estados/1
+
+--GET (by name) https://localhost:5001/v1/estados/Bahia
+
+--PUT (Estados)
+https://localhost:5001/v1/estados/1
+
+--1
+{
+    "NomeEstado":"Báhheêeah",
+    "UF":"BÁ"
+}
+--2
+{
+    "NomeEstado":"Pêrnâmbúcóo",
+    "UF":"PÊ"
+}
+--3
+{
+    "NomeEstado":"Cíàrá",
+    "UF":"CÍ"
+}
+
+-- DELETE
+https://localhost:5001/v1/estados/4
+
+
+---------------------------------
+--POST (Cidades)
+
+{
+    "NomeCidade":"Camaçarí",
+    "IdEstado": 1,
+    "Estado": {
+        "NomeEstado": "Báhheêeah",
+        "UF": "BÁ"
+    }
+}
+
+{
+    "NomeCidade":"Salvador",
+    "IdEstado": 1,
+    "Estado": {
+        "NomeEstado": "Báhheêeah",
+        "UF": "BÁ"
+    }
+}
+
+{
+    "NomeCidade":"Lauro de Freitas",
+    "IdEstado": 1,
+    "Estado": {
+        "NomeEstado": "Báhheêeah",
+        "UF": "BÁ"
+    }
+}
+
+{
+    "NomeCidade":"Catende",
+    "IdEstado": 2,
+    "Estado": {
+        "NomeEstado": "Pêrnâmbúcóo",
+        "UF": "PÊ"
+    }
+}
+
+{
+    "NomeCidade":"Jaboatão dos Guararapes",
+    "IdEstado": 2,
+    "Estado": {
+        "NomeEstado": "Pêrnâmbúcóo",
+        "UF": "PÊ"
+    }
+}
+
+{
+    "NomeCidade":"Fortaleza",
+    "IdEstado": 3,
+    "Estado": {
+        "NomeEstado": "Cíàrá",
+        "UF": "CÍ"
+    }
+}
+
+{
+    "NomeCidade":"Itapipoca",
+    "IdEstado": 3,
+    "Estado": {
+        "NomeEstado": "Cíàrá",
+        "UF": "CÍ"
+    }
+}
+
+--GET (All) 	https://localhost:5001/v1/cidades
+
+--GET (One) 	https://localhost:5001/v1/cidades/1
+
+--GET (by name) https://localhost:5001/v1/cidades/Bahia
+
+--GET (by Estado)
+https://localhost:5001/v1/cidades/buscar/Itapipoca
+
+
+--PUT (Cidades)
+https://localhost:5001/v1/cidades/1
+
+--1
+{
+    "NomeCidade":"Çamicará",
+    "IdEstado": 1,
+    "Estado": {
+        "NomeEstado": "Báhheêeah",
+        "UF": "BÁ"
+    }
+}
+
+--2
+{
+    "NomeCidade":"Apreensor",
+    "IdEstado": 1,
+    "Estado": {
+        "NomeEstado": "Báhheêeah",
+        "UF": "BÁ"
+    }
+}
+
+--3
+{
+    "NomeCidade":"Freitas de Lauro",
+    "IdEstado": 1,
+    "Estado": {
+        "NomeEstado": "Báhheêeah",
+        "UF": "BÁ"
+    }
+}
+
+--4
+{
+    "NomeCidade":"Guararapão dos Jaboatabes",
+    "IdEstado": 2,
+    "Estado": {
+        "NomeEstado": "Péernâmbúcóo",
+        "UF": "PÉ"
+    }
+}
+
+--5
+{
+    "NomeCidade":"K-TEND",	
+    "IdEstado": 2,
+    "Estado": {
+        "NomeEstado": "Péernâmbúcóo",
+        "UF": "PÉ"
+    }
+}
+
+--6
+{
+    "NomeCidade":"Fraqueza",
+    "IdEstado": 3,
+    "Estado": {
+        "NomeEstado": "Cêàrá",
+        "UF": "CÊ"
+    }
+}
+
+--7
+{
+    "NomeCidade":"Eita-Pipóca",
+    "IdEstado": 3,
+    "Estado": {
+        "NomeEstado": "Cêàrá",
+        "UF": "CÊ"
+    }
+}
+-- DELETE
+https://localhost:5001/v1/cidades/4
+
+---------------------------------
+--POST (Clientes)
+
+
+{
+    "NomeCompleto":"Mihainuan de Sá Silva",
+    "Sexo":"Masculino",
+    "DataNascimento":"1992-06-02",
+    "Idade":28,
+    "IdCidade": 1,
+    "Cidade": {
+        "NomeCidade": "Çamicará",
+        "IdEstado": 1,
+        "UF": "BÁ" },         
+
+    "IdEstado": 1,
+    "Estado": {
+        "NomeEstado": "Báhheêeah",
+        "UF": "BÁ"
+        }
+}
+
+
+{
+    "NomeCompleto":"Beatriz Oliveira",
+    "Sexo":"Feminino",
+    "DataNascimento":"1992-06-02",
+    "Idade":28,
+    "IdCidade": 1,
+    "Cidade": {
+        "NomeCidade": "Freitas de Lauro",
+        "IdEstado": 1,
+        "UF": "BÁ" },         
+
+    "IdEstado": 1,
+    "Estado": {
+        "NomeEstado": "Báhheêeah",
+        "UF": "BÁ"
+        }
+}
+
+{
+    "NomeCompleto":"Fernanda Oliveira",
+    "Sexo":"Masculina",
+    "DataNascimento":"1992-06-02",
+    "Idade":28,
+    "IdCidade": 3,
+    "Cidade": {
+        "NomeCidade": "Fraqueza",
+        "IdEstado": 1,
+        "UF": "CÍ" },         
+
+    "IdEstado": 3,
+    "Estado": {
+        "NomeEstado": "Cêàrá",
+        "UF": "CÍ"
+        }
+}
+
+
+
+--GET (All) 	https://localhost:5001/v1/clientes
+
+--GET (One) 	https://localhost:5001/v1/clientes/1
+
+--GET (by name) https://localhost:5001/v1/clientes/buscar/Beatriz Oliveira
+
+--GET (by Estado)
+https://localhost:5001/v1/clientes/estado/1
+
+--GET (by Cidade)
+https://localhost:5001/v1/clientes/cidade/1
+
+--PUT (Clientes)
+https://localhost:5001/v1/clientes/1
+
+
+{
+    "NomeCompleto":"Alquingel Silveira",
+    "Sexo":"Mxsculinx",
+    "DataNascimento":"2000-12-12",
+    "Idade":20,
+    "IdCidade": 4,
+    "Cidade": {
+        "NomeCidade": "Guararapão dos Jaboatabes",
+        "IdEstado": 2,
+        "UF": "PÊ" },         
+
+    "IdEstado": 2,
+    "Estado": {
+        "NomeEstado": "Péernâmbúcóo",
+        "UF": "PÊ"
+        }
+}
+
+    {
+        "idCliente": 3,
+        "nomeCompleto": "Beatrice Oliveira",
+        "sexo": "Feminina",
+        "dataNascimento": "1999-06-12",
+        "idade": 21,
+        "idCidade": 5,
+        "cidade": {
+            "idCidade": 5,
+            "nomeCidade": "Eita-Pipóca",
+            "idEstado": 5,
+            "estado": null
+        },
+        "idEstado": 1,
+        "estado": {
+            "idEstado": 24,
+            "nomeEstado": "Báhheêeah",
+            "uf": "BÁ"
+        }
+    }
+
+
+-- DELETE
+https://localhost:5001/v1/clientes/4
